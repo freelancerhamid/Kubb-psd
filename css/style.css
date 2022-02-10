@@ -1,0 +1,776 @@
+:root{
+    --rof: 'Roboto', sans-serif;
+    --rosf: 'Roboto Slab', serif;
+    --mcol: #28b8d8;
+    --icol: #28b8d8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.crl{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* =======================
+    common css ends 
+========================== */
+
+nav{
+    height: 90px;
+    background: rgba(0, 0, 0, 0.44);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+}
+
+nav .navbar{
+    height: 90px;
+    display: flex;
+}
+
+nav .navbar .logo{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar .logo img{
+    width: 100%;
+}
+
+nav .navbar .nav-list{
+    width: 950px;
+    height: 100%;
+}
+
+nav .navbar .nav-list ul{
+    width: 950px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navbar .nav-list ul li{
+    margin-right: 44px;
+}
+
+nav .navbar .nav-list ul li:last-child{
+    margin-right: 24px;
+}
+
+nav .navbar .nav-list ul li a{
+    font-family: var(--rof);
+    font-weight: 800;
+    font-size: 14px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+nav .navbar .nav-list ul .active a{
+    color: var(--mcol);
+}
+
+nav .navbar .nav-list ul li a:hover{
+    color: var(--mcol);
+}
+
+nav .navbar .icon{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+nav .navbar .icon::before{
+    content: "";
+    width: 1px;
+    height: 30px;
+    background: #f1f1f1;
+    position: absolute;
+    left: 0;
+    bottom: 30;
+
+}
+
+nav .navbar .icon a i{
+    color: #f1f1f1;
+    font-size: 14px;
+    margin-left: 18px;
+    transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+nav .navbar .icon a i:hover{
+    color: var(--mcol);
+}
+/* =======================
+    navbar css ends 
+========================== */
+
+
+#banner-bg{
+    height: 700px;
+    background: url(../imges/bannar-img.jpg) no-repeat center / cover;
+    position: relative;
+}
+
+#banner-bg .banner-text{
+    text-align: center;
+    color: #fff;
+}
+
+#banner-bg .banner-text h1{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 325px;
+}
+
+#banner-bg .banner-text h3{
+    font-family: var(--rosf);
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#banner-bg .banner-text p{
+    font-family: var(--rosf);
+    font-weight: 300px;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+/* =======================
+    banner css ends 
+========================== */
+
+
+ 
+#service-bg{
+    height: 545px;
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+#service-bg .service{
+    height: 545px;
+}
+
+#service-bg .service .service-heading{
+    width: 100%;
+    height: 190px;
+    text-align: center;
+}
+
+#service-bg .service .service-heading h2{
+    font-family: var(--rosf);
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #444444;
+}
+
+#service-bg .service .service-heading p{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 14px;
+    color: #666666;
+    padding-top: 20px;
+    padding-bottom: 65px;
+}
+
+#service-bg .service .service-heading h3{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    text-transform: uppercase;
+}
+
+#service-bg .service .service-content{
+    width: 100%;
+    height: 355px;    display: flex;
+    justify-content: space-between;
+}
+
+#service-bg .service .service-content figure{
+    width: 370px;
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+}
+
+#service-bg .service .service-content figure img{
+    width: 100%;
+}
+
+#service-bg .service .service-content figure figcaption h3{
+    font-family: var(--rosf);
+    font-weight: 700;
+    font-size: 17px;
+    color: #444444;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#service-bg .service .service-content figure figcaption p{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+}
+/* =======================
+    service css ends 
+========================== */
+
+
+
+#gallery{
+    height: 430px;
+    background: #2c2c2c;
+    padding: 80px 0;
+}
+
+#gallery .gallery-heading{
+    width: 100%;
+    height: 44px;
+    text-align: center;
+}
+
+#gallery .gallery-heading h3{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 18px;
+    color: #d5d5d5;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#gallery .gallery-heading h3::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    position: absolute;
+    top: 10px;
+    left: 566px;
+}
+
+#gallery .gallery-heading h3::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    position: absolute;
+    top: 10px;
+    right: 566px;
+}
+
+#gallery .gallery-heading span{
+    position: relative;
+}
+
+#gallery .gallery-heading span::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    position: absolute;
+    top: -9px;
+    left: 125px;
+}
+
+#gallery .gallery-heading span::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #535353;
+    position: absolute;
+    top: -9px;
+    right: 125px;
+}
+
+#gallery .gallery-content{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+#gallery .gallery-content figure{
+    padding-left: 12px;
+}
+
+#gallery .gallery-footer{
+    width: 100%;
+    height: 86px;
+    text-align: center;
+}
+
+#gallery .gallery-footer .button{
+    width: 100%;
+    height: 86px;
+    padding-top: 48px;
+}
+
+#gallery .gallery-footer .button a{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #a6a6a6;
+    color: #a6a6a6;
+    padding: 19px 20px;
+}
+
+#gallery .gallery-footer .button a:hover{
+    border: 1px solid var(--mcol);
+    color: var(--mcol);
+}
+
+#gallery .gallery-footer .button a i{
+    margin-right: 5px;
+}
+/* =======================
+    service css ends 
+========================== */
+
+
+#journal-bg{
+    height: 504px;
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+#journal-bg .journal{
+    height: 504px;
+}
+
+#journal-bg .journal .iournal-heading{
+    width: 100%;
+    height: 44px;
+    text-align: center;
+}
+
+#journal-bg .journal .iournal-heading h3{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#journal-bg .journal .iournal-heading h3::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 10px;
+    left: 360px;
+}
+
+#journal-bg .journal .iournal-heading h3::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 10px;
+    right: 360px;
+}
+
+#journal-bg .journal .iournal-heading span{
+    position: relative;
+}
+
+#journal-bg .journal .iournal-heading span::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: -9px;
+    left: 125px;
+}
+
+#journal-bg .journal .iournal-heading span::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: -9px;
+    right: 125px;
+}
+
+#journal-bg .journal .journal-content{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#journal-bg .journal .journal-content figure{
+    width: 370px;
+    height: 100%;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+
+#journal-bg .journal .journal-content figure .heading{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+#journal-bg .journal .journal-content figure .heading h3{
+    font-family: var(--rosf);
+    font-weight: 700;
+    font-size: 16px;
+    color: #444444;
+    text-transform: capitalize;
+    padding: 20px 0 10px 0;
+}
+
+#journal-bg .journal .journal-content figure .heading p{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+    text-transform: capitalize;
+}
+
+
+#journal-bg .journal .journal-content figure .img{
+    width: 100%;
+    height: 225px;
+}
+
+#journal-bg .journal .journal-content figure .img img{
+    width: 100%;
+}
+
+#journal-bg .journal .journal-content figure .pra{
+    width: 100%;
+    height: 145px;
+    text-align: left;
+}
+
+#journal-bg .journal .journal-content figure .pra p{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    padding: 25px 30px 20px 25px;
+}
+
+#journal-bg .journal .journal-content figure .pra .continue{
+    display: flex;
+    justify-content: space-between;
+}
+
+#journal-bg .journal .journal-content figure .pra .continue a{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 11px;
+    color: #5f5858;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#journal-bg .journal .journal-content figure .pra .continue a::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: var(--mcol);
+    position: absolute;
+    left: 25px;
+    bottom: -5px;
+}
+
+#journal-bg .journal .journal-content figure .pra .continue a:last-of-type::after{
+    width: 0;
+}
+/* =======================
+    journal css ends 
+========================== */
+
+
+
+
+#about-bg{
+    height: 325px;
+    background: #f9f9f9;
+    padding-bottom: 80px;
+}
+
+#about-bg .about{
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-bg .about .item{
+    width: 570px;
+    height: 100%;
+}
+
+#about-bg .about .item header{
+    width: 100%;
+    height: 45px;
+}
+
+#about-bg .about .item header h3{
+    font-family: var(--rof);
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#about-bg .about .item header h3::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 8px;
+    right: 290px;
+}
+
+#about-bg .about .item header h3::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 12px;
+    right: 290px;
+}
+
+#about-bg .about .item header .about-head::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 8px;
+    right: 342px;
+}
+
+#about-bg .about .item header .about-head::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 12px;
+    right: 342px;
+}
+
+#about-bg .about .item .about-content{
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+
+#about-bg .about .item .about-content figure{
+    width: 197px;
+    height: 100%;
+}
+
+#about-bg .about .item .about-content figure img{
+    width: 100%;
+}
+
+#about-bg .about .item .about-content figcaption{
+    width: 373px;
+    height: 100%;
+    color: #666666;
+}
+
+#about-bg .about .item .about-content figcaption h4{
+    font-family: var(--rosf);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 17px 15px;
+}
+
+#about-bg .about .item .about-content figcaption p{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 16px;
+}
+
+#about-bg .about .item .services-content{
+    width: 100%;
+    height: 280px;
+    display: flex
+}
+
+#about-bg .about .item .services-content ul li{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#about-bg .about .item .services-content ul li i{
+    color: var(--icol);
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about-bg .about .item .services-content ul li h3{
+    font-family: var(--rosf);
+    font-weight: 700;  
+    font-size: 17px;
+    color: #444444;
+    text-transform: capitalize;
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
+
+#about-bg .about .item .services-content ul li p{
+    font-family: var(--rof);
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    padding-left: 55px;
+    padding-right: 42px;
+}
+
+/* =======================
+    journal css ends 
+========================== */
+
+#footer-bg{
+    height: 245px;
+    background: #373737;
+    padding: 70px 0;
+}
+
+#footer-bg .footer{
+    height: 245px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-bg .footer .get{
+    width: 270px;
+    height: 100%;
+}
+
+#footer-bg .footer .get h3{
+    font-family: var(--rof);
+    font-family: 700;
+    font-size: 16px;  
+    color: #f0f0f0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#footer-bg .footer .touch p{
+    font-family: var(--rof);
+    font-family: 400;
+    font-size: 14px;
+    color: #cacaca;
+    line-height: 24px;
+}
+
+#footer-bg .footer .touch .first{
+    margin-top: 20px;
+}
+
+#footer-bg .footer .touch .first li a{
+    font-family: var(--rof);
+    font-family: 400;
+    font-size: 14px;
+    color: #cacaca;
+}
+
+#footer-bg .footer .touch .first li{
+    position: relative;
+}
+
+#footer-bg .footer .touch .first li i{
+    color: #cacaca;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#footer-bg .footer .touch .first li p{
+    padding-left: 25px;
+}
+
+#footer-bg .footer .twitter ul li{
+    margin-bottom: 15px;
+}
+
+#footer-bg .footer .twitter ul li p{
+    font-family: var(--rof);
+    font-family: 400;
+    font-size: 14px;
+    color: #cacaca;
+    line-height: 24px;
+    padding-right: 26px;
+}
+
+#footer-bg .footer .twitter ul li span{
+    font-family: var(--rof);
+    font-family: 400;
+    font-size: 12px;
+    color: #929292;
+}
+/* =======================
+    footer css ends 
+========================== */
+
+
